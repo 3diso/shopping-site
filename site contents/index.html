@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>  
+      <title> maths website</title>
+      <link href="./styles.css" rel="stylesheet">
+      <script>
+        function submitanswer(questionNumber){
+          document.getElementsByClassName(`rightanswer${questionNumber}`)[0].style.color = 'green';
+          const allItems = document.getElementsByName(`question${questionNumber}`)
+          const incorrectItems = document.getElementsByClassName(`answer${questionNumber}`)
+          for (i=0;i<incorrectItems.length;i++){
+            incorrectItems[i].style.color = "red";
+          }
+          for (i=0; i!=4; i++){
+            allItems[i].disabled = true;
+          }  
+        }
+      </script>
+  </head>
+  
+  <body>
+    <h1>Math quiz</h1>
+    <h3 class="question">What is 9x12?</h3>
+    <form>
+      <input type="radio" name="question1">
+      <label class="answer1">103</label><br>
+      <input type="radio" name="question1">
+      <label class="answer1">112</label><br>
+      <input type="radio" name="question1">
+      <label class="rightanswer1">108</label><br>
+      <input type="radio" name="question1">
+      <label class="answer1" >156</label><br><br>
+      
+      <button type="button" onclick="submitanswer(1)">Submit answer</button>
+      
+    </form>
+
+    <h3 class="question">What is 14x5?</h3>
+    <form>
+      <input type="radio" name="question2">
+      <label class="answer2">87</label><br>
+      <input type="radio" name="question2">
+      <label class="answer2">56</label><br>
+      <input type="radio" name="question2">
+      <label class="answer2">62</label><br>
+      <input type="radio" name="question2">
+      <label class="rightanswer2">70</label><br><br>
+      
+      <button type="button" onclick="submitanswer(2)">Submit answer</button>
+      
+    </form>
+
+      <h3 class="question">What is 12x11?</h3>
+    <form>
+      <input type="radio" name="question3">
+      <label class="rightanswer3">132</label><br>
+      <input type="radio" name="question3">
+      <label class="answer3">154</label><br>
+      <input type="radio" name="question3">
+      <label class="answer3">120</label><br>
+      <input type="radio" name="question3">
+      <label class="answer3">123</label><br>
+      <button type="button" onclick="submitanswer(3)">Submit answer</button>     
+    </form>
+
+    <h3 class="question">What is 6x11?</h3>
+    <form>
+      <input type="radio" name="question4">
+      <label class="answer4">57</label><br>
+      <input type="radio" name="question4">
+      <label class="answer4">60</label><br>
+      <input type="radio" name="question4">
+      <label class="rightanswer4">66</label><br>
+      <input type="radio" name="question4">
+      <label class="answer4">82</label><br>
+      <button type="button" onclick="submitanswer(4)">Submit answer</button>     
+    </form>
+
+  <h3 class="question">What is 11x11?</h3>
+    <form>
+      <input type="radio" name="question5">
+      <label class="answer5">143</label><br>
+      <input type="radio" name="question5">
+      <label class="rightanswer5">121</label><br>
+      <input type="radio" name="question5">
+      <label class="answer5">110</label><br>
+      <input type="radio" name="question5">
+      <label class="answer5">110</label><br>
+      <button type="button" onclick="submitanswer(5)">Submit answer</button>     
+    </form>
+
+  <h3 class="question">What is 4x10?</h3>
+    <form>
+      <input type="radio" name="question6">
+      <label class="answer6">52</label><br>
+      <input type="radio" name="question6">
+      <label class="answer6">36</label><br>
+      <input type="radio" name="question6">
+      <label class="answer6">33</label><br>
+      <input type="radio" name="question6">
+      <label class="rightanswer6">40</label><br>
+      <button type="button" onclick="submitanswer(6)">Submit answer</button>     
+    </form>
+
+  <h3 class="question">What is 13x7?</h3>
+    <form>
+      <input type="radio" name="question7">
+      <label class="answer7">81</label><br>
+      <input type="radio" name="question7">
+      <label class="answer7">78</label><br>
+      <input type="radio" name="question7">
+      <label class="rightanswer7">91</label><br>
+      <input type="radio" name="question7">
+      <label class="answer7">110</label><br>
+      <button type="button" onclick="submitanswer(7)">Submit answer</button>     
+    </form>
+
+  <h3 class="question">What is 12x9?</h3>
+    <form>
+      <input type="radio" name="question8">
+      <label class="rightanswer8">108</label><br>
+      <input type="radio" name="question8">
+      <label class="answer8">128</label><br>
+      <input type="radio" name="question8">
+      <label class="answer8">97</label><br>
+      <input type="radio" name="question8">
+      <label class="answer8">96</label><br>
+      <button type="button" onclick="submitanswer(8)">Submit answer</button>     
+    </form>
+
+  <h3 class="question">What is 15x13?</h3>
+    <form>
+      <input type="radio" name="question9">
+      <label class="answer9">222</label><br>
+      <input type="radio" name="question9">
+      <label class="rightanswer9">195</label><br>
+      <input type="radio" name="question9">
+      <label class="answer9">180</label><br>
+      <input type="radio" name="question9">
+      <label class="answer9">181</label><br>
+      <button type="button" onclick="submitanswer(9)">Submit answer</button>     
+    </form>
+
+  <h3 class="question">What is 7x4?</h3>
+    <form>
+      <input type="radio" name="question10">
+      <label class="rightanswer10">28</label><br>
+      <input type="radio" name="question10">
+      <label class="answer10">38</label><br>
+      <input type="radio" name="question10">
+      <label class="answer10">22</label><br>
+      <input type="radio" name="question10">
+      <label class="answer10">21</label><br>
+      <button type="button" onclick="submitanswer(10)">Submit answer</button>     
+    </form>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+* {
+  border: 0px solid black;
+   
+}
+p {
+  font-family: verdana;
+  font-size: 100px;
+}
+h1{
+  background-color: rgb(41,136,219);
+  color: darkblue;
+  font-family: verdana ;
+  font-size: 0.3;
+  border-radius: 15px;
+  padding: 4px 12px;
+  display: inline-block;
+  text-align: center
+}
+body {
+  background-color: rgba(134, 141, 141, 0.992);
+}
+.question {
+  font-style: italic;
+  font-weight: 900;
+  margin: 10px 40px 25px;
+}
+button {
+  background-color: lightgreen;
+  border-radius: 4px;
+}
+
