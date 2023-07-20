@@ -1,5 +1,4 @@
-/*
-function changecolor(){
-    document.getElementsByClassName("rightanswer").style.color = "darkgreen";
-    document.getElementsByClassName("answer").style.color = "red";
-  } */
+function fetchitem() {
+  let name = document.getElementById("computer-title").innerHTML;
+  document.getElementById("item1").innerHTML = name;
+}

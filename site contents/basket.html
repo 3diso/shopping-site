@@ -3,16 +3,21 @@
 <html lang="en">
 
   <head>
+    <meta charset="utf-8">
     <title>Shopping Website</title>
     <script src="./script.js"></script>
     <link rel="stylesheet" href="styles.css">
   </head>
 
-  <body>
+  <body onload="fetchitem()">
     <h1 class="title" id="basketTitle">Basket</h1>
-    <uo class="items">Here are our added items
-      
-    </uo>
+    <h2 class="listheader">currently contained items</h2>
+    <ul class="items"> 
+      <li id="item1"></li>
+      <li id="item2"></li>
+      <li id="item3"></li>
+      <li id="item4"></li>
+    </ul>
   </body>
 
 </html>
