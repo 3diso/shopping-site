@@ -3,15 +3,17 @@ body {
 }
 
 #shopping-site-title {
-  font-family: 'Londrina Shadow', cursive;
-  font-size: 60px;
-  padding: 20px 500px 20px 600px;
+  font-family: 'Londrina Shadow', 'cursive';
+  font-size: 80px;
+  padding: 0px 500px 0px 750px;
+  letter-spacing: 1px;
 
 }
 
 #basket {
-  font-family: 'Londrina Shadow', cursive;
-  font-size: 30px;
+  font-family: 'Bitter', serif;
+  font-size: 40px;
+  margin-left: 30px;
 
 }
 
@@ -25,37 +27,66 @@ body {
   display: inline-block;
 }
 
-
 #list-of-products {
+  font-family: 'Bitter', serif;
   text-align: center;
   color: aliceblue;
+  margin-top: 35px;
+  margin-bottom: 60px;
+  font-size: 40px;
 }
 
 #computer {
   background-image: url("https://img.freepik.com/free-photo/white-simple-textured-design-background_53876-97408.jpg?w=360");
   border-radius: 20px;
   padding: 100px 60px;
-  width: 200px;
+  width: 300px;
+  height: 400px;
   box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+  margin: 0px 150px;
 }
 
 #book {
   background-image: url("https://img.freepik.com/free-photo/white-simple-textured-design-background_53876-97408.jpg?w=360");
   border-radius: 20px;
   padding: 100px 60px;
-  width: 200px;
+  width: 300px;
+  height: 400px;
   box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+  margin: 0px 150px;
 }
 
 #banana {
   background-image: url("https://img.freepik.com/free-photo/white-simple-textured-design-background_53876-97408.jpg?w=360");
   border-radius: 20px;
   padding: 100px 60px;
-  width: 200px;
+  width: 300px;
+  height: 400px;
   box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+  margin: 0px 150px;
 }
 
 .row-one {
   display: inline-block;
   text-align: center;
+}
+
+img {
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.item-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-top: -50px;
+}
+
+.item-price {
+  font-family: 'Bitter', serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-top: 10px;
 }
