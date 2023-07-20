@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&amp;display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body onload="setconsts()">
     <div class="header">
       <h1 class="label" id="shopping-site-title">Shopping Site</h1>
       <a class="label" id="basket" href="./basket.html">basket</a>
@@ -23,7 +23,7 @@
       <h4 id="computer-price">Price: £299.00</h4>
       <form class="buttons">
         <input type="button" id="view-computer" value="View item" onclick="itemdata('computer')"></input>
-        <input type="button" id="add-computer" value="Add to basket" onclick=""></input>
+        <input type="button" id="add-computer" value="Add to basket" onclick="addtobasket('computer', '£299', '1')"></input>
       </form>
     </div>
     <div class="row-one" id="book">
@@ -31,7 +31,7 @@
       <h4 id="book-price">Price: £14.99</h4>
       <form class="buttons">
         <input type="button" id="view-book" value="View item" onclick="itemdata('book')"></input>
-        <input type="button" id="add-book" value="Add to basket"></input>
+        <input type="button" id="add-book" value="Add to basket" onclick="addtobasket('book', '£14.99', '2')"></input>
       </form>
     </div>
     <div class="row-one" id="banana">
@@ -39,7 +39,7 @@
       <h4 id="banana-price">Price: £0.89</h4>
       <form class="buttons">
         <input type="button" id="view-banana" value="View item" onclick="itemdata('banana')"></input>
-        <input type="button" id="add-banana" value="Add to basket"></input>
+        <input type="button" id="add-banana" value="Add to basket" onclick="addtobasket('banana', '£0.89', '3')"></input>
       </form>
     </div>
   </body>
