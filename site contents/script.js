@@ -3,5 +3,9 @@ function fetchitem() {
   document.getElementById("item1").innerHTML = name;
 }
 function itemdata(item){
-  window.open("./item-data.hmtl", "_blank")
+  window.open("./item-data.html", "_blank")
+  localStorage.setItem("item", item);
+}
+function printitem(item){
+  document.getElementById("itemdataTitle").innerHTML = item
 }
