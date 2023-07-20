@@ -1,11 +1,61 @@
 body {
-  background-color: rgb(254,254,254)
+  background-color: rgb(80, 80, 80)
 }
 
 #shopping-site-title {
   font-family: 'Londrina Shadow', cursive;
+  font-size: 60px;
+  padding: 20px 500px 20px 600px;
+
 }
 
-.basket {
+#basket {
   font-family: 'Londrina Shadow', cursive;
+  font-size: 30px;
+
+}
+
+.header {
+  background-image: url("https://img.freepik.com/free-photo/white-simple-textured-design-background_53876-97408.jpg?w=360");
+  text-align: center;
+  border-radius: 10px;
+}
+
+.label {
+  display: inline-block;
+}
+
+
+#list-of-products {
+  text-align: center;
+  color: aliceblue;
+}
+
+#computer {
+  background-image: url("https://img.freepik.com/free-photo/white-simple-textured-design-background_53876-97408.jpg?w=360");
+  border-radius: 20px;
+  padding: 100px 60px;
+  width: 200px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+}
+
+#book {
+  background-image: url("https://img.freepik.com/free-photo/white-simple-textured-design-background_53876-97408.jpg?w=360");
+  border-radius: 20px;
+  padding: 100px 60px;
+  width: 200px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+}
+
+#banana {
+  background-image: url("https://img.freepik.com/free-photo/white-simple-textured-design-background_53876-97408.jpg?w=360");
+  border-radius: 20px;
+  padding: 100px 60px;
+  width: 200px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+}
+
+.row-one {
+  display: inline-block;
+  text-align: center;
 }
