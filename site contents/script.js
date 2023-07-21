@@ -20,19 +20,58 @@ function itemdata(item){
   window.open("./item-data.html", "_blank")
   localStorage.setItem("item", item);
 }
-function printitem(item){
-  document.getElementById("itemdataTitle").innerHTML = item
-  if (item == "computer")
+function loadItem() 
+{
+  document.getElementById("item-name").innerHTML = localStorage.getItem('item_name');
+  document.getElementById("item-desc").innerHTML = localStorage.getItem('item_desc');
+  if (document.getElementById("item-name").innerHTML === 'computer')
   {
-    document.getElementById("main").innerHTML = "computer is good"
-  } else if (item == "banana")
+    for (let i = 0; i < computer_spec.length; i++)
+    {
+      let listItem = document.createElement('li');
+      listItem.innerHTML = computer_spec[i];
+      document.getElementById("item-list").append(listItem);
+    }
+  }
+  else if (document.getElementById("item-name").innerHTML === 'book')
   {
-    document.getElementById("main").innerHTML = "book is readable"
-  }else 
+    for (let i = 0; i < book_spec.length; i++)
+    {
+      let listItem = document.createElement('li');
+      listItem.innerHTML = book_spec[i];
+      document.getElementById("item-list").append(listItem);
+    }
+  }
+  else if (document.getElementById("item-name").innerHTML === 'banana')
   {
-    document.getElementById("main").innerHTML = "banana exits"
+    for (let i = 0; i < banana_spec.length; i++)
+    {
+      let listItem = document.createElement('li');
+      listItem.innerHTML = banana_spec[i];
+      document.getElementById("item-list").append(listItem);
+    }
   }
 }
+
+
+//----------------------- C O M P U T E R ------------------------------
+
+let computer_desc = "HP All-in-One Desktop PC 24-k0022na | Intel® Core™ i5-10400T Processor | 8GB RAM | 512GB SSD | 23.8 inch Full HD 16:9 display | Microsoft Windows 11 Home OS | Black";
+
+let computer_spec = ["Brand: HP", "Resolution: 1080p Full HD Pixels", "RAM Size: 8GB"];
+
+//------------------------- B O O K -----------------------
+
+let book_desc = "An exciting book.";
+
+let book_spec = ["Dimensions: 15.24 x 2.84 x 22.86 cm", "Number of Pages: 448"]
+
+//---------------------- B A N A N A ---------------------------------
+
+let banana_desc = "A yummy banana."
+
+let banana_spec = ["Weight: 0.08kg", "Size: Medium"];
+
 function gotoBasket(){
   document.getElementById("main").hidden = true;
   fetchitem();
