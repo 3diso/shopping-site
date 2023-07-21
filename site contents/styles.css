@@ -96,10 +96,11 @@ img {
 input[type="button"] {
   margin: 10px;
   border-radius: 10px;
-  color: #FFF;
+  color: #000000;
   font-size: 20px;
   border-width: 5px;
   font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
 .view {
