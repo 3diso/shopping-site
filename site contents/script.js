@@ -16,10 +16,24 @@ function fetchitem() {
 var itemBasket = []
 localStorage.setItem("itemArr", [])
 
-function itemdata(item){
-  window.open("./item-data.html", "_blank")
-  localStorage.setItem("item", item);
+function viewItem(itemName)
+{
+  localStorage.setItem('item_name', itemName);
+  if (itemName === 'computer')
+  {
+    localStorage.setItem('item_desc', computer_desc);
+  }
+  if (itemName === 'book')
+  {
+    localStorage.setItem('item_desc', book_desc);
+  }
+  if (itemName === 'banana')
+  {
+    localStorage.setItem('item_desc', banana_desc);
+  }
+  location.assign("./item-data.html");
 }
+
 function loadItem() 
 {
   document.getElementById("item-name").innerHTML = localStorage.getItem('item_name');
