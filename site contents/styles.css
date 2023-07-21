@@ -11,7 +11,7 @@ body {
 
 #basket {
   font-family: 'Bitter', serif;
-  font-size: 40px;
+  font-size: 30px;
   margin-left: 30px;
 }
 
@@ -80,6 +80,7 @@ img {
   font-size: 40px;
   letter-spacing: 1px;
   margin-top: -50px;
+  margin-bottom: 10px;
 }
 
 .item-price {
@@ -87,6 +88,7 @@ img {
   font-size: 25px;
   letter-spacing: 1px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .buttons {
@@ -96,11 +98,11 @@ img {
 input[type="button"] {
   margin: 10px;
   border-radius: 10px;
-  color: #000000;
+  color: #FFF;
   font-size: 20px;
   border-width: 5px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 600;
+  padding: 15px 20px;
 }
 
 .view {
@@ -109,4 +111,90 @@ input[type="button"] {
 
 .add {
   background-color: rgb(247, 148, 48);
+}
+
+.container {
+  background-image: url("https://img.freepik.com/free-photo/white-simple-textured-design-background_53876-97408.jpg?w=360");
+  border-radius: 20px;
+  padding: 100px 60px;
+  width: 1600px;
+  height: 700px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+  margin: 0px 250px;
+  align-items: center;
+}
+
+#item-name {
+  text-align: center;
+  font-family: 'Londrina Shadow', 'cursive';
+  font-size: 90px;
+  letter-spacing: 1px;
+  color: white;
+  padding: 0px 500px 0px 750px;
+  margin-left: 200px;
+}
+
+h2 {
+  font-family: 'Bitter', serif;
+  font-size: 40px;
+}
+
+p,
+li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.viewItemHeader {
+  display: inline-block;
+}
+
+#go-back-home,
+#go-home-basket {
+  margin-left: 10px;
+  background-color: rgb(247, 148, 48);
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.basket-container {
+  background-image: url("https://img.freepik.com/free-photo/white-simple-textured-design-background_53876-97408.jpg?w=360");
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+  align-items: center;
+  display: inline-block;
+}
+
+#summary-container {
+  width: 800px;
+  height: 800px;
+  margin: 10px 50px 50px 400px;
+}
+
+#checkout-container {
+  width: 500px;
+  height: 800px;
+  margin: 10px 100px 50px 50px;
+}
+
+.basket-header {
+  display: inline-block;
+}
+
+#your-basket-title {
+  text-align: center;
+  font-family: 'Londrina Shadow', 'cursive';
+  font-size: 90px;
+  letter-spacing: 1px;
+  color: white;
+  padding: 0px 500px 0px 600px;
+}
+
+#buy-now-button {
+  margin-left: 1480px;
+  margin-top: -80px;
+  margin-bottom: 50px;
+  background-color: rgb(247, 148, 48);
+  border-radius: 10px;
+  font-size: 30px;
 }
